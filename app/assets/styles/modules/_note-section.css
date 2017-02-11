@@ -1,0 +1,16 @@
+.note-section {
+  margin-top: 40%;
+  margin-left: 15%;
+
+  &__subtitle {
+    color: $mainBlue;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__title {
+    color: $mainBlue;
+    font-size: 2.75rem;
+    width: 60%;
+  }
+}

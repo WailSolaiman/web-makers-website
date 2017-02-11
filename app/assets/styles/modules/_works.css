@@ -1,0 +1,29 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image-holder {
+    flex-basis: 100%;
+    position: relative;
+
+    @mixin atSmall {
+      flex-basis: 25%;
+    }
+  }
+
+  &__details {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+
+  }
+
+  &__title {
+    color: #FFF;
+  }
+
+  &__subtitle {
+
+  }
+}

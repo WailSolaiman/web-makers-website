@@ -1,0 +1,9 @@
+.btn {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: $btnColor;
+  padding: 1rem;
+  border-radius: 25px;
+  border-style: none;
+}

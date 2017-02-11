@@ -1,0 +1,14 @@
+.img-holder {
+  display: none;
+
+  @mixin atMedium {
+    display: block;
+    background-image: url('./images/image-holder.jpg');
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+}

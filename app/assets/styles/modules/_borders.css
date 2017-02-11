@@ -1,0 +1,12 @@
+.borders {
+  border: none;
+
+  @mixin atMedium {
+    &__border-bottom {
+      border-bottom: 1px solid $borderColor;
+    }
+    &__border-right {
+      border-right: 1px solid $borderColor;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+/* import normalize */
+@import "normalize.css";
+/*import base partials */
+@import "base/_variables";
+@import "base/_global";
+@import "base/_mixins";
+/*import modules partials */
+@import "modules/_btn";
+@import "modules/_main-section";
+@import "modules/_absolute-section";
+@import "modules/_row";
+@import "modules/_wrapper";
+@import "modules/_flex-container";
+@import "modules/_skills";
+@import "modules/_img-holder";
+@import "modules/_hero-image";
+@import "modules/_dot";
+@import "modules/_underline";
+@import "modules/_note-section";
+@import "modules/_works";
+@import "modules/_sayings";
+@import "modules/_clients";
+@import "modules/_borders";

@@ -1,0 +1,53 @@
+.skills {
+  flex-basis: 100%;
+  padding: 80px 50px;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+
+  @mixin atSmall {
+    flex-basis: 50%;
+    border-right: 1px solid lightgray;
+  }
+
+  &__icon {
+    color: $mainBlue;
+    font-size: 3.5rem !important;
+  }
+  &__underline {
+    width: 15%;
+    color: $mainBlue;
+  }
+  &__title {
+    font-size: 0.85rem;
+    color: $mainBlue;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  &__description {
+    color: $mainBlue;
+    font-weight: 100;
+    line-height: 150%;
+    padding-top: 10px;
+  }
+
+
+
+  &--skill-1 {
+
+  }
+
+  &--skill-2 {
+
+  }
+
+  &--skill-3 {
+
+  }
+
+  &--skill-4 {
+
+  }
+}

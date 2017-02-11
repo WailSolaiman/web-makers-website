@@ -1,0 +1,40 @@
+.absolute-section {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+
+  @mixin atSmall {
+    top: 30%;
+    left: 12%;
+  }
+
+  &__title {
+    width: 60%;
+    color: #FFF;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 1px;
+
+    @mixin atSmall {
+      font-size: 3.4375rem;
+    }
+  }
+
+
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--letter-spacing {
+    letter-spacing: 1px;
+  }
+
+  &--margin-bottom {
+    padding-bottom: 1rem;
+  }
+
+  &--margin-top {
+    padding-top: 1rem;
+  }
+}
