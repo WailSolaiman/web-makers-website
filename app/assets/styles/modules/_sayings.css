@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     /*background-image: url('./images/herewhatheysay.jpg');*/
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6) ), url('./images/herewhatheysay.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./images/herewhatheysay.jpg');
     /* Set a specific height */
     height: 100%;
     /* Create the parallax scrolling effect */
@@ -16,13 +16,17 @@
 
   }
   &__infos {
-    padding-top: 100px;
-    padding-bottom:100px;
+    padding-top: 150px;
+    padding-bottom:150px;
     text-align: center;
   }
 
   &__subtitle {
+    font-size: 1.3rem;
 
+    @mixin atSmall {
+      font-size: 1.5rem;
+    }
   }
 
   &__header {
@@ -47,6 +51,7 @@
   &__descriptions {
     height: 200px;
     padding-top: 20px;
+    position: relative;
 
     @mixin atSmall {
       height: 120px;
@@ -54,21 +59,34 @@
   }
 
   &__mySlides {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 
     @mixin atSmall {
-      width: 40%;
+      width: 80%;
+    }
+
+    @mixin atMedium {
+      width: 50%;
     }
 
     h3 {
       color: #FFF;
       font-weight: 100;
       font-size: 1.25rem;
+
+      @mixin atSmall {
+        font-size: 1.6rem;
+      }
     }
     p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+
+      @mixin atSmall {
+        font-size: 1.2rem;
+      }
     }
   }
 }

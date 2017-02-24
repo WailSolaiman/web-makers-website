@@ -1,5 +1,16 @@
 .underline {
   height: 0;
-  width: 50px;
-  border-bottom: 1px solid $btnColor;
+  width: 180px;
+  border-bottom: 3px solid $btnColor;
+
+  &--shorter {
+    width: 15%;
+    color: $mainBlue;
+    transition: width .5s ease-out;
+  }
+
+  &--hover-width {
+    width: 45%;
+    transition: width .5s ease-out;
+  }
 }

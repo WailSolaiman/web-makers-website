@@ -1,6 +1,6 @@
 .hero-image {
   display: block;
-  background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6) ), url('./images/hero.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2) ), url('./images/hero.jpg');
   position: absolute;
   top: 0;
   width: 100%;

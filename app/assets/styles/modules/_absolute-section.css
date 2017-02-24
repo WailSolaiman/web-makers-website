@@ -1,22 +1,48 @@
 .absolute-section {
   position: absolute;
-  top: 10%;
+  top: 25%;
   left: 5%;
 
   @mixin atSmall {
+    top: 20%;
+    left: 12%;
+  }
+
+  @mixin atMedium {
     top: 30%;
     left: 12%;
+  }
+
+  &__before-title {
+    font-size: 0.9rem;
+    @mixin atSmall {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      width: 50%;
+    }
+    @mixin atMedium {
+      font-size: 1.3rem;
+      width: 100%;
+    }
   }
 
   &__title {
     width: 60%;
     color: #FFF;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
     letter-spacing: 1px;
 
     @mixin atSmall {
+      width: 65%;
       font-size: 3.4375rem;
+    }
+  }
+
+  &__after-title {
+    font-size: 1.15rem;
+    @mixin atSmall {
+      font-size: 1.3rem;
     }
   }
 

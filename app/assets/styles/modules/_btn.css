@@ -6,4 +6,9 @@
   padding: 1rem;
   border-radius: 25px;
   border-style: none;
+  text-decoration: none;
+
+  @mixin atSmall {
+    font-size: 1rem;
+  }
 }

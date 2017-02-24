@@ -2,21 +2,18 @@
   flex-basis: 100%;
   padding: 80px 50px;
   text-align: center;
-  border-bottom: 1px solid lightgray;
+  transition: background-color.3s ease-out;
 
   @mixin atSmall {
     flex-basis: 50%;
-    border-right: 1px solid lightgray;
+    border: 1px dotted white;
   }
 
   &__icon {
     color: $mainBlue;
     font-size: 3.5rem !important;
   }
-  &__underline {
-    width: 15%;
-    color: $mainBlue;
-  }
+
   &__title {
     font-size: 0.85rem;
     color: $mainBlue;
@@ -24,30 +21,34 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-top: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 6px;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
   }
+
   &__description {
     color: $mainBlue;
     font-weight: 100;
     line-height: 150%;
     padding-top: 10px;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.1rem;
+    }
   }
 
-
-
-  &--skill-1 {
-
+  &--hover-color{
+    color: #FFF;
   }
 
-  &--skill-2 {
-
-  }
-
-  &--skill-3 {
-
-  }
-
-  &--skill-4 {
-
+  &--change-background-color{
+    background-color: $btnColor;
+    transition: background-color.3s ease-out;
   }
 }
