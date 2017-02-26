@@ -1,16 +1,16 @@
 .absolute-section {
   position: absolute;
+  width: 85%;
   top: 25%;
-  left: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 
   @mixin atSmall {
-    top: 20%;
-    left: 12%;
+    top: 15%;
   }
 
   @mixin atMedium {
-    top: 30%;
-    left: 12%;
+    top: 20%;
   }
 
   &__before-title {
@@ -22,19 +22,24 @@
     }
     @mixin atMedium {
       font-size: 1.3rem;
-      width: 100%;
+      width: 40%;
     }
   }
 
   &__title {
     width: 60%;
     color: #FFF;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     margin: 0;
     letter-spacing: 1px;
 
     @mixin atSmall {
       width: 65%;
+      font-size: 3.4375rem;
+    }
+
+    @mixin atMedium {
+      width: 32%;
       font-size: 3.4375rem;
     }
   }
@@ -45,8 +50,6 @@
       font-size: 1.3rem;
     }
   }
-
-
 
   &--uppercase {
     text-transform: uppercase;

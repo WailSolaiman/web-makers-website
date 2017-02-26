@@ -6,7 +6,6 @@
 @import "base/_mixins";
 /*import modules partials */
 @import "modules/_btn";
-@import "modules/_main-section";
 @import "modules/_absolute-section";
 @import "modules/_row";
 @import "modules/_wrapper";
@@ -16,6 +15,7 @@
 @import "modules/_hero-image";
 @import "modules/_dot";
 @import "modules/_underline";
+@import "modules/_note-section-container";
 @import "modules/_note-section";
 @import "modules/_works";
 @import "modules/_sayings";

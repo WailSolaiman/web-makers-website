@@ -7,7 +7,6 @@ class StickyHeader {
     this.siteHeader = $(".site-header");
     this.headerTriggerElement = $(".absolute-section--uppercase");
     this.siteHeaderLogo = $(".site-header__logo");
-    this.wrapper = $(".wrapper--narrow");
     this.createHeaderWaypoint();
 
     this.headerLinks = $(".primary-nav a");
@@ -59,16 +58,14 @@ class StickyHeader {
         if (direction == "down") {
           that.siteHeader.addClass("site-header--dark");
           that.siteHeaderLogo.addClass("site-header__logo--smaller-logo");
-          that.wrapper.removeClass("wrapper--narrow");
-          that.wrapper.addClass("wrapper--narrow-sticky-header");
+          that.siteHeader.addClass("site-header--narrow");
         } else {
           that.siteHeader.removeClass("site-header--dark");
           that.siteHeaderLogo.removeClass("site-header__logo--smaller-logo");
-          that.wrapper.removeClass("wrapper--narrow-sticky-header");
-          that.wrapper.addClass("wrapper--narrow");
+          that.siteHeader.removeClass("site-header--narrow");
         }
       },
-      offset: "20%"
+      offset: "10%"
     });
   }
 }

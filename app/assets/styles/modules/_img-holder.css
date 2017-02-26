@@ -3,12 +3,13 @@
 
   @mixin atMedium {
     display: block;
-    background-image: url('./images/image-holder.jpg');
     position: absolute;
     top: 0;
-    width: 50%;
-    height: 100%;
+    background-image: url('../../../assets/images/image-holder.jpg');
     background-size: cover;
     background-position: center center;
+    background-repeat:   no-repeat;
+    width: 50%;
+    height: 100%;
   }
 }

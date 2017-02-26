@@ -1,6 +1,6 @@
 .skills {
   flex-basis: 100%;
-  padding: 80px 50px;
+  padding: 75px 20px;
   text-align: center;
   transition: background-color.3s ease-out;
 
@@ -23,9 +23,9 @@
     padding-top: 20px;
     padding-bottom: 6px;
 
-    @mixin atSmall {
+    /*@mixin atSmall {
       font-size: 1.2rem;
-    }
+    }*/
   }
 
   &__description {

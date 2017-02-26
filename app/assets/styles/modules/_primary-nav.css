@@ -1,18 +1,18 @@
 .primary-nav {
-  position: absolute;
-  width: 100%;
-  top: 75%;
-  text-align: center;
+  padding-top: 20px;
 
   @mixin atSmall {
-    width: 55%;
-    top: 35%;
-    right: 0;
+    padding-top: 10px;
   }
 
   @mixin atMedium {
-    width: 40%;
-    top: 38%;
+    padding-top: 20px;
+  }
+
+  &--pull-right {
+    @mixin atSmall {
+      float: right;
+    }
   }
 
   ul {
@@ -57,7 +57,7 @@
     }
 
     @mixin atMedium {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
 
     &.is-current-link {
